@@ -30,13 +30,27 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+stateful components employ state; state is component level storage object used to hold data that components may or may not need to access. state can be created read deleted and updated. when state updates it triggers the component / app to re render. state can be passed as props through multiple levels of components as it is passed around and changes, props will change too. its what makes react reacti-ive!
+
 2. Describe the different phases of the component lifecycle.
+
+mounting (birth) - constructor function called and state data initializes, render invoked and JSK elements transformed to DOM. render called and componentDIdMount invoked.
+
+updating (state) - any new props received from parent updates child ; this.setState changes to state go through ; component id update invoked
+
+unmounting (death) - component will unmount and destroy event listeners.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
 4. Define stateful logic.
 
 5. Describe how to test a React component with React Testing Library.
+
+arrange - set up the react component to be tested
+
+act - execute behavie / view / extract the desired outcome youre testing
+
+assert - check to see if you get the desired outcome of test.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
