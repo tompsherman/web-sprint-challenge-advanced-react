@@ -2,7 +2,7 @@
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
-This challenge allows you to practice the concepts and techniques learned over the past sprint and apply them in a concrete project. This sprint explored some advanced React topics ⚛️. During this sprint, you studied class components, the component lifecycle and class component lifecycle methods, custom hooks, and React Testing Library 🐙. In your challenge this week, you will demonstrate your mastery of these skills by creating an app that will fetch data from a local server using a class component, displaying that data, using a custom hook, and writing tests for your app.
+This challenge allows you to practice the concepts and techniques learned over the past sprint and apply them in a concrete project. This sprint explored some advanced React topics ⚛️. During this sprint, you studied class components, the component lifecycle and class component lifecycle methods, custom hooks, and React Testing Library 🐙. In your challenge this week, you will demonstrate your mastery of these skills by creating an app that will fetch data from a local server using a class component, displaying that data, using a custom hook, and writing tests for your app .
 
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
@@ -30,13 +30,27 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+stateful components employ state; state is component level storage object used to hold data that components may or may not need to access. state can be created read deleted and updated. when state updates it triggers the component / app to re render. state can be passed as props through multiple levels of components as it is passed around and changes, props will change too. its what makes react reacti-ive!
+
 2. Describe the different phases of the component lifecycle.
+
+mounting (birth) - constructor function called and state data initializes, render invoked and JSK elements transformed to DOM. render called and componentDIdMount invoked.
+
+updating (state) - any new props received from parent updates child ; this.setState changes to state go through ; component id update invoked
+
+unmounting (death) - component will unmount and destroy event listeners.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
 4. Define stateful logic.
 
 5. Describe how to test a React component with React Testing Library.
+
+arrange - set up the react component to be tested
+
+act - execute behavie / view / extract the desired outcome youre testing
+
+assert - check to see if you get the desired outcome of test.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -89,9 +103,9 @@ Your finished project must include all of the following requirements:
 
 Display a list of the plants from the server. This should be done in the class component `PlantList`.
 
-- [ ] In the `PlantList` class component, fetch data from the server you now have running - the data can be fetched from `http://localhost:3333/plants`
-- [ ] Set the data to a state property called `this.state.plants`
-- [ ] The render function is already built and styled. Once the data is on the state, you will see the list of plants, and you will have the functionality to add a plant to the cart
+- [x] In the `PlantList` class component, fetch data from the server you now have running - the data can be fetched from `http://localhost:3333/plants`
+- [x] Set the data to a state property called `this.state.plants`
+- [x] The render function is already built and styled. Once the data is on the state, you will see the list of plants, and you will have the functionality to add a plant to the cart
 
 #### Shopping Cart
 
